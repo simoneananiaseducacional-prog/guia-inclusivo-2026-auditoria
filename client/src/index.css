@@ -229,3 +229,117 @@ button:disabled, input:disabled, select:disabled, textarea:disabled { cursor: no
 .disabled-link { cursor: not-allowed; opacity: .6; }
 .check-row input[type="checkbox"] { width: 17px; height: 17px; flex: 0 0 17px; accent-color: #0f8a7d; }
 .training-notice { color: #557375; font-size: 10px; }
+
+/* PDI module */
+.pdi-page-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; margin-bottom: 22px; }
+.pdi-page-heading h1 { max-width: 800px; margin: 5px 0 7px; color: #204b50; font-family: "Sora", sans-serif; font-size: clamp(24px, 3vw, 34px); line-height: 1.2; letter-spacing: -.04em; }
+.pdi-page-heading .section-description { margin: 0; }
+.pdi-formative-badge { display: inline-flex; align-items: center; gap: 8px; flex: 0 0 auto; padding: 10px 13px; border: 1px solid #d7e9df; border-radius: 9px; color: #327366; background: #eff8f2; font-size: 12px; font-weight: 800; }
+.pdi-document-note { display: flex; align-items: flex-start; gap: 12px; padding: 17px 19px; margin: 16px 0; border: 1px solid #d7e8e3; border-radius: 11px; color: #355f61; background: #eef7f3; }
+.pdi-document-note svg { flex: 0 0 auto; margin-top: 1px; color: #287c73; }
+.pdi-document-note p { margin: 0; font-size: 15px; line-height: 1.55; }
+.pdi-student-summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 16px 0 20px; }
+.pdi-student-summary > div { display: grid; gap: 5px; min-width: 0; padding: 13px 15px; border: 1px solid #e0eae7; border-radius: 9px; background: #fff; }
+.pdi-student-summary span, .pdi-responsible span, .pdi-overline { color: #718989; font-size: 11px; font-weight: 800; letter-spacing: .07em; }
+.pdi-student-summary strong { color: #315d60; font-size: 15px; line-height: 1.4; }
+.pdi-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin: 19px 0 12px; }
+.pdi-step { display: flex; align-items: flex-start; gap: 10px; min-width: 0; min-height: 68px; padding: 13px 12px; border: 1px solid #dfe9e6; border-radius: 10px; color: #567276; background: #fff; text-align: left; cursor: pointer; }
+.pdi-step-active { border-color: #4a9a8b; color: #155b60; background: #edf8f3; box-shadow: inset 0 0 0 1px #4a9a8b; }
+.pdi-step-number { display: grid; place-items: center; width: 26px; height: 26px; flex: 0 0 26px; border-radius: 7px; color: #34756e; background: #e0f0e9; font-size: 12px; font-weight: 800; }
+.pdi-step-name { padding-top: 2px; font-size: 13px; font-weight: 700; line-height: 1.35; }
+.pdi-panel { min-width: 0; padding: 22px; border: 1px solid #dfe9e6; border-radius: 12px; background: #fff; }
+.pdi-panel-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; padding-bottom: 17px; margin-bottom: 17px; border-bottom: 1px solid #e8efed; }
+.pdi-panel-heading h2 { margin: 4px 0 0; color: #2c5c5e; font-family: "Sora", sans-serif; font-size: 22px; line-height: 1.3; }
+.pdi-responsible { display: grid; gap: 5px; max-width: 360px; padding: 11px 13px; border-radius: 8px; background: #f5f9f7; }
+.pdi-responsible strong { color: #426668; font-size: 14px; line-height: 1.4; }
+.pdi-form-section { padding: 17px 0; border-bottom: 1px solid #e8efed; }
+.pdi-form-section:first-child { padding-top: 0; }
+.pdi-form-section:last-child { border-bottom: 0; }
+.pdi-form-section h3, .pdi-checklist-group > legend { margin: 0 0 13px; color: #2b6262; font-family: "Sora", sans-serif; font-size: 17px; font-weight: 700; }
+.pdi-fields-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+.pdi-field { display: grid; align-content: start; gap: 6px; min-width: 0; }
+.pdi-field-wide { grid-column: 1 / -1; }
+.pdi-field > label, .pdi-final-report > label { color: #466b6d; font-size: 14px; font-weight: 700; line-height: 1.4; }
+.pdi-field input, .pdi-field textarea, .pdi-final-report textarea { width: 100%; min-width: 0; min-height: 42px; padding: 10px 11px; border: 1px solid #d4e1de; border-radius: 7px; color: #365e60; background: #fff; font-size: 14px; line-height: 1.45; }
+.pdi-field input::placeholder, .pdi-field textarea::placeholder, .pdi-final-report textarea::placeholder { color: #869a99; opacity: 1; }
+.pdi-field textarea, .pdi-final-report textarea { min-height: 100px; resize: vertical; }
+.pdi-field-help { color: #657e7f; font-size: 13px; line-height: 1.45; }
+.pdi-intro { margin: 0 0 16px; color: #566f71; font-size: 15px; line-height: 1.5; }
+.pdi-checklist-group { min-width: 0; padding: 17px 0; margin: 0; border: 0; border-top: 1px solid #e8efed; }
+.pdi-checklist { display: grid; gap: 8px; }
+.pdi-checklist-item { display: grid; grid-template-columns: minmax(150px, .7fr) minmax(0, 1.6fr); align-items: center; gap: 12px; min-width: 0; padding: 10px 12px; border: 1px solid #e5edeb; border-radius: 8px; }
+.pdi-checklist-item > legend { float: left; width: 35%; padding-right: 12px; color: #486c6e; font-size: 14px; font-weight: 650; line-height: 1.4; }
+.pdi-checklist-item > div { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.pdi-checklist-item label { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; color: #557072; font-size: 13px; }
+.pdi-checklist-item input { width: 16px; height: 16px; margin: 0; accent-color: #18786d; }
+.pdi-synthesis { padding: 18px; margin-top: 18px; border: 1px solid #d8e9e1; border-radius: 10px; background: #f7fbf8; }
+.pdi-section-title { display: flex; align-items: center; gap: 9px; color: #256d65; }
+.pdi-section-title h3 { margin: 0; color: #315e60; font-family: "Sora", sans-serif; font-size: 18px; }
+.pdi-summary-item { padding-top: 14px; margin-top: 14px; border-top: 1px solid #e2eeea; }
+.pdi-summary-item h4 { margin: 0 0 5px; color: #446a6a; font-size: 14px; }
+.pdi-summary-item p { margin: 0; color: #526d6e; font-size: 14px; line-height: 1.6; }
+.pdi-head-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; padding-bottom: 18px; }
+.pdi-concept-contrast { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+.pdi-concept-contrast > div { padding: 14px 16px; border: 1px solid #dcebe5; border-radius: 9px; background: #f4faf6; }
+.pdi-concept-contrast > div + div { border-color: #dce8ee; background: #f4f8fb; }
+.pdi-concept-contrast strong { color: #2b6461; font-size: 15px; }
+.pdi-concept-contrast p { margin: 5px 0 0; color: #597273; font-size: 14px; line-height: 1.45; }
+.pdi-decision-question { display: flex; align-items: flex-start; gap: 10px; padding: 14px 16px; margin: 0 0 20px; border: 1px solid #f0dfba; border-radius: 9px; color: #745e39; background: #fff9ed; font-size: 15px; line-height: 1.5; }
+.pdi-decision-question svg { flex: 0 0 auto; margin-top: 1px; color: #a17a39; }
+.pdi-component-case { padding: 17px 0; border-top: 1px solid #e5eeeb; }
+.pdi-component-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.pdi-component-heading h3 { margin: 3px 0 0; color: #315e60; font-family: "Sora", sans-serif; font-size: 18px; }
+.pdi-session-label { color: #738889; font-size: 12px; }
+.pdi-table-scroll { max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; border: 1px solid #dce7e4; border-radius: 8px; }
+.pdi-plan-table, .pdi-review-table { width: 100%; min-width: 980px; border-collapse: collapse; }
+.pdi-plan-table th, .pdi-plan-table td, .pdi-review-table th, .pdi-review-table td { min-width: 190px; padding: 13px; border-right: 1px solid #e5edeb; border-bottom: 1px solid #e5edeb; text-align: left; vertical-align: top; }
+.pdi-plan-table th, .pdi-review-table th { color: #355e61; background: #f2f7f5; font-size: 12px; line-height: 1.4; }
+.pdi-plan-table td { color: #4b6769; font-size: 14px; line-height: 1.55; }
+.pdi-plan-table tr:last-child td, .pdi-review-table tr:last-child td { border-bottom: 0; }
+.pdi-plan-table th:last-child, .pdi-plan-table td:last-child, .pdi-review-table th:last-child, .pdi-review-table td:last-child { border-right: 0; }
+.pdi-justification { display: flex; align-items: flex-start; gap: 9px; padding: 12px 14px; margin-top: 10px; border: 1px solid #efdfbf; border-radius: 8px; color: #705b39; background: #fffaf0; }
+.pdi-justification svg { flex: 0 0 auto; margin-top: 2px; color: #a77a35; }
+.pdi-justification p { margin: 0; font-size: 14px; line-height: 1.5; }
+.pdi-justification-access { border-color: #d4e9dc; color: #3f6b5a; background: #f2faf5; }
+.pdi-justification-access svg { color: #37816a; }
+.pdi-aclta-field { padding: 16px; margin-top: 18px; border: 1px solid #dce9e5; border-radius: 9px; background: #f8fbfa; }
+.pdi-aclta-field > p { margin: 7px 0 0; color: #5a7474; font-size: 13px; line-height: 1.5; }
+.pdi-content-note, .pdi-source-note, .pdi-prototype-note { color: #637a7b; font-size: 13px; line-height: 1.5; }
+.pdi-content-note { margin: 12px 0 4px; }
+.pdi-source-note { padding: 11px 13px; border-left: 3px solid #6a9c8f; background: #f4f8f5; }
+.pdi-principle { padding: 16px 18px; margin-top: 17px; border-radius: 9px; color: #255f5d; background: #eaf6f0; font-size: 16px; line-height: 1.55; }
+.pdi-review-table th { min-width: 150px; text-transform: none; }
+.pdi-review-table td input, .pdi-review-table td select, .pdi-review-table td textarea { width: 100%; min-width: 115px; min-height: 40px; padding: 8px; border: 1px solid #d4e1de; border-radius: 6px; background: #fff; color: #405f61; }
+.pdi-review-table td textarea { min-height: 90px; resize: vertical; }
+.pdi-exclusive-label { display: block; margin-bottom: 6px; color: #815f32; font-size: 11px; font-weight: 800; line-height: 1.4; }
+.pdi-final-report { display: grid; gap: 9px; max-width: 900px; }
+.pdi-final-report > p { margin: 0; color: #5c7475; font-size: 14px; }
+.pdi-final-report textarea { min-height: 230px; }
+.pdi-step-navigation { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; }
+.pdi-step-navigation > span { color: #698081; font-size: 13px; }
+.pdi-privacy { display: flex; align-items: center; gap: 8px; margin-top: 16px; color: #557375; font-size: 13px; }
+.pdi-privacy svg { flex: 0 0 auto; color: #388377; }
+.pdi-panel :focus-visible, .pdi-steps :focus-visible { outline: 3px solid #167a70; outline-offset: 3px; }
+.select-field select:disabled { cursor: not-allowed; }
+.tab-bar [role="tab"] { cursor: pointer; }
+.tab-bar [role="tab"][aria-selected="false"] { color: #697f80; }
+.case-layout[role="tabpanel"], .source-text-card[role="tabpanel"], .contrib-grid[role="tabpanel"] { outline-offset: 5px; }
+@media (max-width: 840px) {
+  .pdi-student-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pdi-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pdi-step:last-child { grid-column: 1 / -1; }
+  .pdi-panel-heading { flex-direction: column; }
+  .pdi-responsible { max-width: none; }
+}
+@media (max-width: 560px) {
+  .pdi-page-heading { flex-direction: column; }
+  .pdi-formative-badge { white-space: normal; }
+  .pdi-student-summary, .pdi-steps, .pdi-fields-grid, .pdi-head-fields, .pdi-concept-contrast { grid-template-columns: 1fr; }
+  .pdi-step:last-child { grid-column: auto; }
+  .pdi-panel { padding: 15px; }
+  .pdi-panel-heading h2 { font-size: 20px; }
+  .pdi-checklist-item { display: block; }
+  .pdi-checklist-item > legend { float: none; width: auto; padding: 0; margin-bottom: 7px; }
+  .pdi-step-navigation { flex-wrap: wrap; }
+  .pdi-step-navigation > span { order: -1; width: 100%; }
+}
