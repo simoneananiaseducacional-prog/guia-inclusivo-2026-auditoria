@@ -16,14 +16,10 @@ Repositório: `simoneananiaseducacional-prog/guia-inclusivo-2026-auditoria`
 
 | Branch | Commit confirmado | Estado |
 |---|---|---|
-| `fase1-pdi` | `4200fa11fe06ac2ae262421328f745ea1e5da3d4` | Branch atual — PDI + registro de auditoria corrigido |
+| `fase1-pdi` | **HEAD consultável no GitHub** | Branch atual — PDI + registro de auditoria corrigido |
 | `main` | `2f9e23281e8ccac51173016aab9139a84b440adc` | Ainda sem o PDI |
-
 **Não houve merge nem publicação nova nesta auditoria.**
-
-**Correção documental anterior:** `92e455fa9f709bd8bca94910738a562834fdbce6`.
-
-**Registro inicial da auditoria:** `51de6b7885f459794651276d8becd320a1e94542`.
+**Marcos documentais:** correção anterior `92e455fa9f709bd8bca94910738a562834fdbce6`; registro inicial `51de6b7885f459794651276d8becd320a1e94542`.
 
 **PDI funcional auditado originalmente no commit:** `f1391e88df0bbdd49dec8e43328c7f787185a723` — base funcional anterior ao registro documental.
 
