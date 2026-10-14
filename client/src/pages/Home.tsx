@@ -43,6 +43,7 @@ import PdiModule from "../components/PdiModule";
 const fictionalLabel = "CASO FICTÍCIO PARA DEMONSTRAÇÃO";
 const officialCopy = "REDAÇÃO A CONFERIR NA FONTE OFICIAL.";
 const curricularCopy = "EXEMPLO DEMONSTRATIVO — NÃO UTILIZAR COMO REFERÊNCIA CURRICULAR OFICIAL.";
+const siteBase = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 type ViewKey =
   | "inicio"
@@ -385,10 +386,10 @@ function Home() {
   const [location, navigate] = useLocation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const currentView = useMemo<ViewKey>(() => {
-    const path = location.replace(/^\//, "").split("/")[0] as ViewKey;
+    const path = location.replace(siteBase, "").replace(/^\//, "").split("/")[0] as ViewKey;
     return navItems.some((item) => item.key === path) ? path : "inicio";
   }, [location]);
-  const go = (view: ViewKey) => { navigate(view === "inicio" ? "/" : `/${view}`); setSidebarOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); };
+  const go = (view: ViewKey) => { navigate(view === "inicio" ? `${siteBase}/` : `${siteBase}/${view}`); setSidebarOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); };
   const title = navItems.find((item) => item.key === currentView)?.label ?? "Visão geral";
   return <div className="app-shell"><a className="skip-link" href="#main-content">Pular para o conteúdo</a><div className={cx("mobile-overlay", sidebarOpen && "mobile-overlay-visible")} onClick={() => setSidebarOpen(false)} /><div className={cx("sidebar-wrap", sidebarOpen && "sidebar-wrap-open")}><Sidebar view={currentView} onClose={() => setSidebarOpen(false)} /></div><main id="main-content" className="main-area"><Topbar title={title} onMenu={() => setSidebarOpen(true)} /><div className="page-content">{currentView === "inicio" && <Overview go={go} />}{currentView === "estudo" && <StudyCase />}{currentView === "paee" && <Paee />}{currentView === "pei" && <Pei />}{currentView === "pdi" && <PdiModule />}{currentView === "planejamento" && <Planning />}{currentView === "adaptar" && <AdaptActivity />}{currentView === "curriculo" && <Curriculum />}{currentView === "base-legal" && <LegalBase />}{currentView === "meus-casos" && <MyCases go={go} />}</div><footer className="app-footer"><span>Guia Inclusivo 2026 · Simulador de formação</span><span>Planejamento pedagógico com validação profissional</span></footer></main></div>;
 }
